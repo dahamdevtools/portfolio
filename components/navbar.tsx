@@ -1,11 +1,11 @@
 "use client";
 
-import { NAV_ITEM_TYPES } from "@/types/navigation";
 import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { NavItemNames, NavItemTypes } from "@/types/navigation";
 
-const NAV_ITEMS: { name: NAV_ITEM_TYPES; url: string }[] = [
+const NAV_ITEMS: NavItemTypes[] = [
   {
     name: "Home",
     url: "#",
@@ -37,7 +37,7 @@ const NAV_ITEMS: { name: NAV_ITEM_TYPES; url: string }[] = [
 ];
 
 export default function Navbar() {
-  const [activeItem, setActiveItem] = useState<NAV_ITEM_TYPES>("Home");
+  const [activeItem, setActiveItem] = useState<NavItemNames>("Home");
 
   return (
     <header className="w-full h-fit flex items-center justify-center p-3.5 fixed top-0 left-0">

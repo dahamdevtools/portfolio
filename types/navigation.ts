@@ -1,4 +1,4 @@
-export type NAV_ITEM_TYPES =
+export type NavItemNames =
   | "Home"
   | "About"
   | "Skills"
@@ -6,3 +6,8 @@ export type NAV_ITEM_TYPES =
   | "Education"
   | "Projects"
   | "Contact";
+
+export type NavItemTypes = {
+  name: NavItemNames;
+  url: string;
+};
