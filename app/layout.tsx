@@ -18,7 +18,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${bricolage.className} h-full antialiased bg-white`}
     >
-      <body className="min-h-full flex flex-col bg-neutral-50 text-neutral-950">
+      <body className="min-h-full flex flex-col bg-neutral-100 text-neutral-950">
         {children}
       </body>
     </html>
